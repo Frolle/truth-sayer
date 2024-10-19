@@ -25,6 +25,7 @@ jsconfig.json
 .idea/**/usage.statistics.xml
 .idea/**/dictionaries
 .idea/**/shelf
+.idea
 
 # Also ignore code styles because .editorconfig is used instead.
 .idea/codeStyles/
@@ -40,7 +41,7 @@ jsconfig.json
 
 # Typings file.
 typings/
-
+.iml
 # Misc
 coverage/
 node_modules/
