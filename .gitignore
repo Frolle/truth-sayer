@@ -41,7 +41,7 @@ jsconfig.json
 
 # Typings file.
 typings/
-.iml
+*.iml
 # Misc
 coverage/
 node_modules/
@@ -59,3 +59,5 @@ yarn-error.log*
 # Mac OSX Finder files.
 **/.DS_Store
 .DS_Store
+
+.angular
