@@ -1,7 +1,7 @@
 <div class="truth-container">
   <h3 class="flex-start">Dagens sanning från internet:</h3>
   <div class="truth-box">
-    <h2 class="flex-center" [innerHTML]="displayTruth()"></h2>
+    <h2 class="flex-center">{{truth | async}}</h2>
   </div>
-  <button mat-flat-button class="truth-button" (click)="newRandomNumber()">Ny sanning!</button>
+  <button mat-flat-button class="truth-button" (click)="newTruth()">Ny sanning!</button>
 </div>

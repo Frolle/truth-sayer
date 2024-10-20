@@ -19,6 +19,10 @@ export class TruthService {
     return this.http.get<Truth>(`${this.apiUrl}/${id}`);
   }
 
+  getRandomTruth(): Observable<Truth> {
+    return this.http.get<Truth>(`${this.apiUrl}/random-truth`);
+  }
+
   createTruth(truth: Truth): Observable<Truth> {
     return this.http.post<Truth>(this.apiUrl, truth);
   }
