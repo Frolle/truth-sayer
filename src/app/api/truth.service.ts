@@ -1,13 +1,15 @@
-import { Injectable } from '@angular/core';
+import {Injectable} from '@angular/core';
 import {HttpClient} from '@angular/common/http';
 import {Observable} from 'rxjs';
 import {Truth} from '../models/truth.model';
+import {environment} from '../../environments/environment';
 
 @Injectable({
   providedIn: 'root'
 })
 export class TruthService {
-  private apiUrl = 'http://localhost:9001/api/truths'; // Adjust to your API endpoint
+  private apiUrl = environment.apiUrl + '/truths'; // Adjust to your API endpoint
+
 
   constructor(private http: HttpClient) { }
 
